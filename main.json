@@ -1,0 +1,280 @@
+{
+  "regions": [
+    {
+      "id": 4,
+      "name": "Qoraqalpog‘iston respublikasi",
+      "districts": [
+        {"id": 45, "name": "Nukus tumani"},
+        {"id": 46, "name": "Nukus shaxri"},
+        {"id": 47, "name": "Beruniy"},
+        {"id": 48, "name": "Muynoq"},
+        {"id": 49, "name": "Qo‘ng‘irot"},
+        {"id": 50, "name": "To‘rtko‘l"},
+        {"id": 51, "name": "Chimboy"},
+        {"id": 52, "name": "Ellikqal'a"},
+        {"id": 53, "name": "Kegeyli"},
+        {"id": 54, "name": "Qanliko‘l"},
+        {"id": 55, "name": "Qorao‘zak"},
+        {"id": 56, "name": "Shumanay"},
+        {"id": 57, "name": "Taxiatosh"},
+        {"id": 58, "name": "Taxtako‘pir"},
+        {"id": 59, "name": "Xo‘jayli"},
+        {"id": 210, "name": "Bozatov"}
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Andijon viloyati",
+      "districts": [
+        {"id": 60, "name": "Andijon shahar"},
+        {"id": 61, "name": "Asaka"},
+        {"id": 62, "name": "Baliqchi"},
+        {"id": 63, "name": "Boz"},
+        {"id": 64, "name": "Buloqboshi"},
+        {"id": 65, "name": "Jalaquduq"},
+        {"id": 66, "name": "Izboskan"},
+        {"id": 67, "name": "Qo‘rg‘ontepa"},
+        {"id": 68, "name": "Marhamat"},
+        {"id": 69, "name": "Oltinko‘l"},
+        {"id": 70, "name": "Paxtaobod"},
+        {"id": 71, "name": "Shahrixon"},
+        {"id": 72, "name": "Ulug‘nor"},
+        {"id": 73, "name": "Xo‘jaobod"},
+        {"id": 204, "name": "Xonobod"},
+        {"id": 222, "name": "Xoldevonbek"}
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Buxoro viloyati",
+      "districts": [
+        {"id": 74, "name": "Buxoro shahar"},
+        {"id": 75, "name": "G‘ijduvon"},
+        {"id": 76, "name": "Jondor"},
+        {"id": 77, "name": "Kogon"},
+        {"id": 78, "name": "Olot"},
+        {"id": 79, "name": "Peshku"},
+        {"id": 80, "name": "Qorako‘l"},
+        {"id": 81, "name": "Qorovulbozor"},
+        {"id": 82, "name": "Romitan"},
+        {"id": 83, "name": "Shofirkon"},
+        {"id": 84, "name": "Vobkent"}
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Farg‘ona viloyati",
+      "districts": [
+        {"id": 85, "name": "Farg‘ona shahar"},
+        {"id": 86, "name": "Beshariq"},
+        {"id": 87, "name": "Bog‘dod"},
+        {"id": 88, "name": "Dang‘ara"},
+        {"id": 89, "name": "Furqat"},
+        {"id": 90, "name": "Oltiariq"},
+        {"id": 91, "name": "Qo‘qon"},
+        {"id": 92, "name": "Quva"},
+        {"id": 93, "name": "Quvasoy"},
+        {"id": 94, "name": "Rishton"},
+        {"id": 95, "name": "So‘x"},
+        {"id": 96, "name": "Toshloq"},
+        {"id": 97, "name": "Uchko‘prik"},
+        {"id": 98, "name": "Yozyovon"},
+        {"id": 200, "name": "Marg'ilon"},
+        {"id": 201, "name": "Farg'ona tumani"},
+        {"id": 202, "name": "Buvayda"},
+        {"id": 203, "name": "O'zbekiston tumani"},
+        {"id": 206, "name":  "Qoshtepa"}
+
+
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Jizzax viloyati",
+      "districts": [
+        {"id": 99, "name": "Jizzax shahar"},
+        {"id": 100, "name": "Arnasoy"},
+        {"id": 101, "name": "Baxmal"},
+        {"id": 102, "name": "Do‘stlik"},
+        {"id": 103, "name": "Forish"},
+        {"id": 104, "name": "G‘allaorol"},
+        {"id": 105, "name": "Sharof Rashidov tumani"},
+        {"id": 106, "name": "Mirzacho‘l"},
+        {"id": 107, "name": "Paxtakor"},
+        {"id": 108, "name": "Yangiobod"},
+        {"id": 109, "name": "Zafarobod"},
+        {"id": 110, "name": "Zarbdor"},
+        {"id": 111, "name": "Zomin"}
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Xorazm viloyati",
+      "districts": [
+        {"id": 112, "name": "Urganch"},
+        {"id": 113, "name": "Bog‘ot"},
+        {"id": 114, "name": "Gurlan"},
+        {"id": 115, "name": "Hazorasp"},
+        {"id": 116, "name": "Qo‘shko‘pir"},
+        {"id": 117, "name": "Shovot"},
+        {"id": 118, "name": "Xiva"},
+        {"id": 119, "name": "Xonqa"},
+        {"id": 120, "name": "Yangibozor"},
+        {"id": 121, "name": "Yangiariq"},
+        {"id": 221, "name":  "Tuproqqala"}
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Namangan viloyati",
+      "districts": [
+        {"id": 122, "name": "Namangan shahar"},
+        {"id": 123, "name": "Chortoq"},
+        {"id": 124, "name": "Chust"},
+        {"id": 125, "name": "Kosonsoy"},
+        {"id": 126, "name": "Mingbuloq"},
+        {"id": 127, "name": "Namangan tumani"},
+        {"id": 128, "name": "Norin"},
+        {"id": 129, "name": "Pop"},
+        {"id": 130, "name": "To‘raqo‘rg‘on"},
+        {"id": 131, "name": "Uchqo‘rg‘on"},
+        {"id": 132, "name": "Yangiqo‘rg‘on"},
+        {"id": 209, "name":  "Uychi"}
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Navoiy viloyati",
+      "districts": [
+        {"id": 133, "name": "Navoiy shahar"},
+        {"id": 134, "name": "Karmana"},
+        {"id": 135, "name": "Konimex"},
+        {"id": 136, "name": "Navbahor"},
+        {"id": 137, "name": "Nurota"},
+        {"id": 138, "name": "Qiziltepa"},
+        {"id": 139, "name": "Tomdi"},
+        {"id": 140, "name": "Uchquduq"},
+        {"id": 219, "name": "Zarafshon"},
+        {"id":  220, "name": "Xatirchi"}
+      ]
+    },
+    {
+      "id": 12,
+      "name": "Qashqadaryo viloyati",
+      "districts": [
+        {"id": 141, "name": "Qarshi"},
+        {"id": 142, "name": "Chiroqchi"},
+        {"id": 143, "name": "Dehqonobod"},
+        {"id": 144, "name": "G‘uzor"},
+        {"id": 145, "name": "Kasbi"},
+        {"id": 146, "name": "Kitob"},
+        {"id": 147, "name": "Koson"},
+        {"id": 148, "name": "Mirishkor"},
+        {"id": 149, "name": "Muborak"},
+        {"id": 150, "name": "Nishon"},
+        {"id": 151, "name": "Shahrisabz"},
+        {"id": 152, "name": "Yakkabog‘"},
+        {"id": 211, "name": "Qamashi"},
+        {"id": 218, "name": "Nurobod"}
+      ]
+    },
+    {
+      "id": 13,
+      "name": "Samarqand viloyati",
+      "districts": [
+        {"id": 153, "name": "Samarqand shahar"},
+        {"id": 154, "name": "Bulung‘ur"},
+        {"id": 155, "name": "Ishtixon"},
+        {"id": 156, "name": "Jomboy"},
+        {"id": 157, "name": "Kattaqo‘rg‘on"},
+        {"id": 158, "name": "Narpay"},
+        {"id": 159, "name": "Oqdaryo"},
+        {"id": 160, "name": "Pastdarg‘om"},
+        {"id": 161, "name": "Payariq"},
+        {"id": 162, "name": "Qo‘shrabot"},
+        {"id": 163, "name": "Toyloq"},
+        {"id": 164, "name": "Urgut"},
+        {"id": 216, "name": "Toyliq"},
+        {"id": 217, "name": "Paxtachi"}
+      ]
+    },
+    {
+      "id": 14,
+      "name": "Surxondaryo viloyati",
+      "districts": [
+        {"id": 165, "name": "Termiz"},
+        {"id": 166, "name": "Angor"},
+        {"id": 167, "name": "Boysun"},
+        {"id": 168, "name": "Denov"},
+        {"id": 169, "name": "Jarqo‘rg‘on"},
+        {"id": 170, "name": "Muzrabot"},
+        {"id": 171, "name": "Oltinsoy"},
+        {"id": 172, "name": "Qiziriq"},
+        {"id": 173, "name": "Qumqo‘rg‘on"},
+        {"id": 174, "name": "Sariosiyo"},
+        {"id": 175, "name": "Sherobod"},
+        {"id": 176, "name": "Sho‘rchi"},
+        {"id": 207, "name":  "Uzun"},
+        {"id": 208, "name":  "Bandixon"}
+      ]
+    },
+      {
+  "id": 15,
+  "name": "Toshkent viloyati",
+  "districts": [
+    {"id": 177, "name": "Bekobod"},
+    {"id": 178, "name": "Bo‘ka"},
+    {"id": 179, "name": "Chinoz"},
+    {"id": 180, "name": "Chirchiq"},
+    {"id": 181, "name": "Qibray"},
+    {"id": 182, "name": "O‘rta Chirchiq"},
+    {"id": 183, "name": "Ohangaron"},
+    {"id": 184, "name": "Parkent"},
+    {"id": 185, "name": "Piskent"},
+    {"id": 186, "name": "Quyi Chirchiq"},
+    {"id": 187, "name": "Toshkent tumani"},
+    {"id": 188, "name": "Yangiyo‘l"},
+    {"id": 189, "name": "Yuqori Chirchiq"},
+    {"id": 190, "name": "Zangiota"},
+    {"id": 205, "name":  "Bekobod"}
+  ]
+},
+{
+  "id": 16,
+  "name": "Toshkent shahar",
+  "districts": [
+    {"id": 191, "name": "Bektemir"},
+    {"id": 192, "name": "Mirzo Ulug‘bek"},
+    {"id": 193, "name": "Mirobod"},
+    {"id": 194, "name": "Olmazor"},
+    {"id": 195, "name": "Sirg‘ali"},
+    {"id": 196, "name": "Uchtepa"},
+    {"id": 197, "name": "Chilonzor"},
+    {"id": 198, "name": "Shayxontohur"},
+    {"id": 199, "name": "Yakkasaroy"},
+    {"id": 200, "name": "Yashnobod"},
+    {"id": 201, "name": "Yunusobod"},
+    {"id": 202, "name": "Yangi Hayot"},
+    {"id": 212, "name": "Olmaliq"},
+    {"id": 213, "name": "Angren"},
+    {"id": 214, "name": "Oqqorgon"},
+    {"id": 215, "name":  "Bostonliq"}
+
+  ]
+},
+    {
+    "id": 15,
+    "name": "Sirdaryo viloyati",
+    "districts": [
+      {"id": 178, "name": "Boyovut"},
+      {"id": 179, "name": "Guliston tumani"},
+      {"id": 180, "name": "Mirzaobod"},
+      {"id": 181, "name": "Oqoltin"},
+      {"id": 182, "name": "Sayxunobod"},
+      {"id": 183, "name": "Sardoba"},
+      {"id": 184, "name": "Sirdaryo tumani"},
+      {"id": 185, "name": "Xovos"}
+    ]
+  }
+  ]
+}
