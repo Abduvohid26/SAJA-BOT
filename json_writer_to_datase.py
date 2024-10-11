@@ -1,7 +1,8 @@
 from loader import bot, db
 import json
 import logging
-
+import xlsxwriter
+import tablib
 # Configure logging
 logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
 
@@ -44,7 +45,7 @@ def json_writer_to_database():
 
                 if not existing_address:
                     db.add_address(
-                        user_id=None,  # Assuming no user_id is provided
+                        user_id=None,
                         region_id=str(region_id),
                         name=district_name,
                         pk=str(district_id),
@@ -59,38 +60,27 @@ def json_writer_to_database():
         logging.error(f"Error during JSON import: {e}")
 
 
-import openpyxl
 
-
-# Excel faylidan o'qish va ma'lumotlarni ma'lumotlar bazasiga yozish
 def write_to_database():
-    print('salom')
     file_name = 'users_list.xlsx'
-    if file_name:
+    with open(file_name, 'rb') as f:
+        data = tablib.Dataset().load(f.read(), format='xlsx')
 
-        # Excel faylini ochamiz
-        workbook = openpyxl.load_workbook(file_name)
-        sheet = workbook.active
+    for row in data.dict:
+        db.add_user(
+            id=row['user_id'],
+            fullname=row['fullname'],
+            telegram_id=None,
+            language='uz',
+            phone=row['phone'],
+            phone_number=row['phone_number'],
+            manzil=row['manzil'],
+            saja=row['saja'],
+            sj_avia=row['sj_avia'],
+            tuman=row['tuman'],
+            exact_address=row['exact_address'],
+            description=row['description'],
+            user_id=row['user_id']
+        )
 
-        # Har bir qatorni o'qiymiz, bosh qatorni tashlab
-        for row in sheet.iter_rows(min_row=2, values_only=True):
-            # Qator ma'lumotlarini o'zgaruvchilarga ajratib olamiz
-            fullname, phone, manzil, tuman, exact_address, description, user_id, added_time, phone_number, saja, sj_avia = row
-
-            # Ma'lumotlar bazasiga yozish
-            db.add_user(
-                id=user_id,  # ID ni user_id dan olamiz
-                fullname=fullname,
-                telegram_id=None,  # Telegram ID agar mavjud bo'lsa
-                language='uz',  # Default til
-                phone=phone,
-                phone_number=phone_number,
-                manzil=manzil,
-                saja=saja,
-                sj_avia=sj_avia,
-                tuman=tuman,
-                exact_address=exact_address,
-                description=description,
-                user_id=user_id
-            )
-    print("All user addd")
+    print("All users added")

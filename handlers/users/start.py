@@ -12,7 +12,6 @@ import asyncio
 from aiogram.utils.keyboard import InlineKeyboardBuilder
 from filters.admin_filter import Admin, Member, AdminMember
 from aiogram.utils.media_group import MediaGroupBuilder
-import pandas as pd
 from aiogram.utils.keyboard import ReplyKeyboardBuilder
 import os
 from data.config import SEO
@@ -209,7 +208,7 @@ async def check_data(call: types.CallbackQuery, callback_data: CheckCall, state:
         data = db.get_users_by_activation_status1()
 
         if not data:
-            await call.message.answer(f"Hozirda userlar ma'lumoti mavjud emas !!!")
+            await call.message.answer("Hozirda userlar ma'lumoti mavjud emas !!!")
             return
 
         users_data = []
@@ -233,12 +232,25 @@ async def check_data(call: types.CallbackQuery, callback_data: CheckCall, state:
 
             users_data.append(user_info)
 
-        df = pd.DataFrame(users_data)
+        import xlsxwriter
 
         file_path = "users_lists.xlsx"
-        df.to_excel(file_path, index=False)
+        workbook = xlsxwriter.Workbook(file_path)
+        worksheet = workbook.add_worksheet()
 
-        excel_file = types.input_file.FSInputFile(file_path)
+        headers = list(users_data[0].keys())
+        for col_num, header in enumerate(headers):
+            worksheet.write(0, col_num, header)
+
+        for row_num, user_info in enumerate(users_data, 1):  # 1-dan boshlanadi, 0-ustun nomlari uchun
+            for col_num, (key, value) in enumerate(user_info.items()):
+                worksheet.write(row_num, col_num, value)
+
+        # Excel faylini saqlash
+        workbook.close()
+
+        # Excel faylini jo'natish
+        excel_file = types.InputFile(file_path)
         for i in SEO:
             try:
                 await bot.send_document(chat_id=int(i), document=excel_file,
