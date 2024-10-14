@@ -1,7 +1,6 @@
 from loader import bot, db
 import json
 import logging
-import openpyxl
 from json_writer_to_datase import json_writer_to_database, write_to_database  # Adjust with actual module name
 import handlers, middlewares
 from loader import dp, bot, db
